@@ -2,16 +2,15 @@ const express = require("express");
 const router = express.Router();
 const authentication = require("../middleware/authentication");
 const mongoose = require("mongoose");
-const { post } = require("./auth");
 const Post = mongoose.model("Post");
 
-router.get("/allpost", (reqres) => {
+router.get("/allpost", (req,res) => {
   Post.find()
     .populate("postedBy", "_id name")
     .then((posts) => {
       res.json({ posts });
     })
-    .catch((err) => {
+    .catch(err => {
       console.log(err);
     });
 });
@@ -50,4 +49,4 @@ router.get("/mypost",authentication, (req, res) => {
     });
 });
 
-module.exprts = router;
+module.exports = router;

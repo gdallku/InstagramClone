@@ -1,0 +1,5 @@
+"name":"gezim2",
+"email":"gezim@gmai.com",
+"password":"123123"
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzZjMWRiODkzY2Y2ODhmZTU5MWMyODEiLCJpYXQiOjE2NjgwMjk5NzN9.Jms0yONG_vO2ChERl7Ixl_8ZkK7qj3CQhT-YGH3EuXk
